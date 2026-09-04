@@ -1,0 +1,2914 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Quiz Sosiologi Indonesia</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <div id="loading-screen">
+  <div class="loading-message" id="loading-message">
+    Halo Ara 💗
+  </div>
+</div>
+ 
+<div class="floating-hearts">
+  <span>♡</span>
+  <span>♡</span>
+  <span>♥</span>
+  <span>♡</span>
+  <span>♥</span>
+  <span>♡</span>
+  <span>♥</span>
+  <span>♡</span>
+</div>
+
+<main id="opening">
+
+  <div class="love-icon">♡</div>
+
+  <p class="eyebrow">A LITTLE QUESTION FOR YOU</p>
+
+  <h1>
+    Sebelum memulai<br>
+    semuanya...
+  </h1>
+
+  <p class="description">
+    Aku Pengen Mastiin Sesuatu dulu.
+    Sesuatu yang sangat sederhana,
+    tapi sangat berarti banyak buatku.
+  </p>
+
+  <div class="question">
+    Apakah kamu mencintaiku?
+  </div>
+
+  <div class="button-area">
+    <button id="yesBtn">Yes, I do <span>♥</span></button>
+    <button id="noBtn">No <span>♡</span></button>
+  </div>
+
+  <p id="hint">Jawab dengan jujur ya...</p>
+  
+</main>
+
+<!-- =========================================
+     BIRTHDAY GIFT EXPERIENCE
+========================================= -->
+
+<section id="giftScreen" class="experience-screen">
+
+  <div class="gift-content">
+
+    <p class="tiny-label">
+      A LITTLE SURPRISE
+    </p>
+
+    <h2>
+      Aku Punya Sesuatu Untukmu..
+    </h2>
+
+    <p class="gift-subtitle">
+      Pencet Kadonya Cepet 💗
+    </p>
+
+    <div id="giftBox" class="gift-box">
+
+      <div class="gift-lid"></div>
+
+      <div class="gift-body">
+        <div class="gift-ribbon vertical"></div>
+        <div class="gift-ribbon horizontal"></div>
+      </div>
+
+      <div class="gift-bow">
+        🎀
+      </div>
+
+    </div>
+
+    <p id="tapText">
+      Pencet Sayang..
+    </p>
+
+    <div class="gift-progress">
+
+      <div
+        id="giftProgress"
+        class="gift-progress-fill">
+      </div>
+
+    </div>
+
+    <p id="tapCounter">
+      0 / 12
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================
+     BIRTHDAY LETTER
+========================================= -->
+
+<section id="letterScreen" class="experience-screen">
+
+  <div class="letter-paper">
+
+    <div class="letter-decoration">
+      ♡
+    </div>
+
+    <p class="letter-date">
+      A LITTLE LETTER FOR YOU
+    </p>
+
+    <h2>
+      Happy Birthday,
+      <span id="birthdayName">
+        My Love Clara
+      </span> 💗
+    </h2>
+
+    <div class="letter-line"></div>
+
+    <div class="letter-body">
+
+      <p>
+        Selamat ulang tahun untuk Bidadariku, Yaitu Lala (Clara)
+        Untukmu yang terhebat, dengan sosok yang kuat.
+        
+      </p>
+      
+      <p>
+        Jujur Aku masih ga nyangka,
+        Masih bisa bersamamu hingga detik akhir ini
+        dan membawa segudang pengalaman baru bagi diri ini
+        sehingga aku merasa sangat bersyukur kamu hadir dialam hidupku
+      </p>
+
+      <p>
+        Di hari spesialmu ini, aku cuma pengen
+        kamu tahu kalau kehadiranmu sudah
+        menjadi salah satu bagian paling indah
+        dalam hidupku.
+      </p>
+
+      <p>
+        Makasih yah, udah jadi dirimu sendir yang
+        sudah hadir, sudah bertahan, dan sudah
+        membuat begitu banyak momen kecil
+        terasa berarti.
+      </p>
+
+      <p>
+        Aku mungkin nggak selalu bisa memberikan
+        semuanya dengan sempurna, tapi aku akan
+        selalu berusaha memberikan yang terbaik
+        yang aku bisa.
+      </p>
+
+      <p>
+        Semoga di umurmu yang ke <storng>17</storng> tahun ini,
+        banyak hal baik datang kepadamu.
+        Semoga semua hal yang kamu impikan
+        perlahan menemukan jalannya.
+      </p>
+
+      <p>
+        Sekali lagi...
+        <strong>Happy Birthday. 🎂💗</strong>
+      </p>
+
+    </div>
+
+    <div class="letter-sign">
+
+      <p>
+        From Rael/Vano, With love.
+      </p>
+
+      <strong>
+        jemand, der mir sehr viel bedeutet♡
+      </strong>
+
+    </div>
+
+    <button id="openSignature">
+      Tanda tangan Surat ini✍️
+    </button>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================
+     SIGNATURE
+========================================= -->
+
+<section id="signatureScreen" class="experience-screen">
+
+  <div class="signature-card">
+
+    <div class="signature-icon">
+      ✍️
+    </div>
+
+    <p class="tiny-label">
+      ONE LAST THING
+    </p>
+
+    <h2>
+      Kasih Tanda Tanganmu.
+    </h2>
+
+    <p class="signature-info">
+      Sini Tanda tangan biar aku kasih surprise.
+    </p>
+
+    <div class="canvas-wrapper">
+
+      <canvas id="signatureCanvas"></canvas>
+
+      <div class="signature-placeholder">
+        Tanda Tangan Dulu sini..
+      </div>
+
+    </div>
+
+    <div class="signature-actions">
+      
+      <button id="clearSignature">
+        HAPUS
+      </button>
+
+      <button id="saveSignature">
+        SAVE INI ♡
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- MENU UTAMA -->
+
+<main id="menu">
+
+  <div class="menu-header">
+    <div class="menu-heart">♥</div>
+
+    <p class="eyebrow">WELCOME TO</p>
+
+    <h2>Our Little World</h2>
+
+    <p>
+      Tempat Kecil Yang dibuat oleh hati untuk Ara.
+    </p>
+  </div>
+
+
+  <div class="cards">
+
+    <button class="card" id="OurLetterCard">
+      <div class="card-icon">💌</div>
+      <div>
+        <h3>Love Letters</h3>
+        <p>Kalimat yang ingin ku sampaikan padamu.</p>
+      </div>
+      <span class="arrow">→</span>
+    </button>
+
+
+    <button class="card" id="OurMemoriesCard">
+      <div class="card-icon">📷</div>
+      <div>
+        <h3>Our Memories</h3>
+        <p>Momen Kecil yang menjadi kenangan.</p>
+      </div>
+      <span class="arrow">→</span>
+    </button>
+
+
+    <button class="card" id="songCard">
+      <div class="card-icon">🎧</div>
+      <div>
+        <h3>Our Song</h3>
+        <p>Lagu Favorite kita.</p>
+      </div>
+      <span class="arrow">→</span>
+    </button>
+
+
+   <button class="card" id="quizCard">
+
+  <div class="card-icon">
+    💬
+  </div>
+
+  <div>
+    <h3>Couple Quiz</h3>
+    <p>Seberapa Baik Kamu mengenal Rael?.</p>
+  </div>
+
+  <span class="arrow">
+    →
+  </span>
+
+     </button>
+    
+    <button class="card" id="jarCard">
+  <div class="card-icon">
+    🫙
+  </div>
+  <div>
+     <h4>Jar of Little Things</h4>
+    <p>Ungkapan kecil Yang indah untukmu.</p>
+  </div>
+  <span class="arrow">
+    →
+  </span>
+     </button>
+    
+ <button class="card" id="favorite-verse">
+  <div class="card-icon">📖</div>
+  <div>
+    <h4>Open when "verse" </h4>
+    <p>Buka Ayat ini ketika kamu butuh</p>
+  </div>
+   <span class="arrow">
+     →
+   </span>
+</button>
+
+</main>
+<!-- =========================
+     COUPLE QUIZ
+========================= -->
+
+<main id="quiz">
+
+  <div class="quiz-top">
+
+    <button id="backMenu">
+      ←
+    </button>
+
+    <span id="progress">
+      1 / 20
+    </span>
+
+  </div>
+
+
+  <div class="quiz-header">
+
+    <div class="quiz-icon">
+      💬
+    </div>
+
+    <p class="eyebrow">
+      A LITTLE TEST FOR YOU
+    </p>
+
+    <h2>
+      Wie gut kennst du mich?
+    </h2>
+
+  </div>
+
+
+  <div class="quiz-card">
+
+    <p id="questionNumber">
+      Question 1
+    </p>
+
+    <h3 id="questionText">
+      Question goes here
+    </h3>
+
+
+    <div id="answers"></div>
+
+
+    <button id="nextQuestion">
+      Next →
+    </button>
+
+  </div>
+
+</main>
+
+
+<!-- =========================
+     QUIZ RESULT
+========================= -->
+
+<main id="quizResult">
+
+  <div class="result-heart">
+    💗
+  </div>
+
+  <p class="eyebrow">
+    QUIZ COMPLETED
+  </p>
+
+  <h2>
+    Hebatnya Pacarku!
+  </h2>
+
+  <div class="score">
+
+    <span id="scoreNumber">
+      0
+    </span>
+
+    <small>/ 20</small>
+
+  </div>
+
+  <p id="resultMessage">
+    Your result...
+  </p>
+
+
+  <button id="returnMenu">
+    Balik Menu Beb ♡
+  </button>
+
+</main>
+
+<div id="heartsBurst"></div>
+
+  <!-- FAVORITE VERSE MENU -->
+<section id="verse-menu" class="verse-page hidden">
+
+  <button class="back-btn" id="backToMenu">←</button>
+
+  <div class="verse-header">
+    <div class="big-book">📖</div>
+    <h2>"Open When"</h2>
+    <p>Buat Suasana hatimu merasa relate🤍</p>
+  </div>
+
+  <div class="verse-options">
+
+    <button class="verse-option" data-verse="sad">
+      <span class="option-icon">🌧️</span>
+      <span>
+        <strong>"Open" Ini ketia kamu Sedih</strong>
+        <small>Sedikit bisa membuatmu tenang</small>
+      </span>
+      <span>→</span>
+    </button>
+
+    <button class="verse-option" data-verse="happy">
+      <span class="option-icon">☀️</span>
+      <span>
+        <strong>"Open" ini ketika kamu Bahagia</strong>
+        <small>Simpan Ini sebagai momen yang indah</small>
+      </span>
+      <span>→</span>
+    </button>
+
+    <button class="verse-option" data-verse="lost">
+      <span class="option-icon">🌙</span>
+      <span>
+        <strong>"Open" ini ketika kamu merasa Kehilangan</strong>
+        <small>Untuk memastikan semuanya baik baik saja</small>
+      </span>
+      <span>→</span>
+    </button>
+
+    <button class="verse-option" data-verse="miss">
+      <span class="option-icon">💌</span>
+      <span>
+        <strong>"Open" ini ketika kamu Kangen aku</strong>
+        <small>Sedikit pengingat untukk kamuu</small>
+      </span>
+      <span>→</span>
+    </button>
+
+    <button class="verse-option" data-verse="hope">
+      <span class="option-icon">🌷</span>
+      <span>
+        <strong>"Open" ketika kamu butuh Harapan</strong>
+        <small>Agar kamu punya pegangan.</small>
+      </span>
+      <span>→</span>
+    </button>
+
+    <!-- PALING DISOROT -->
+    <button class="verse-option favorite-verse-option" data-verse="favorite">
+      <span class="option-icon">✨</span>
+      <span>
+        <strong> "Open" Ayat Favorite mu</strong>
+        <small>Ayat yang ku pasang demi kamu.</small>
+      </span>
+      <span>♡</span>
+    </button>
+
+  </div>
+
+</section>
+  
+  <!-- =========================
+     VERSE READER
+======================== -->
+
+<section id="verse-reader" class="verse-reader hidden">
+
+  <button class="reader-back" id="readerBack">
+    ←
+  </button>
+
+  <div class="reader-top">
+    <div class="reader-icon" id="readerIcon">🌷</div>
+
+    <span class="reader-label" id="readerLabel">
+      OPEN WHEN...
+    </span>
+
+    <h2 id="readerTitle">Sedikit kutipan ayat buat Ara</h2>
+
+    <p id="readerSubtitle">
+      Sesuatu yang harus berdampingan dengan hati
+    </p>
+  </div>
+
+
+  <div class="verse-letter">
+
+    <div class="tiny-sparkle">✦</div>
+
+    <p class="quote" id="verseQuote">
+      Terkadang, Kutipan Ayat Dari kitab itu terasa berwarna.
+    </p>
+
+    <div class="verse-divider">
+      <span>♡</span>
+    </div>
+
+    <div class="scripture">
+
+      <h3 id="verseReference">
+        Your Verse
+      </h3>
+
+      <p id="verseText">
+        Ayat kamu akan ada disini
+      </p>
+
+    </div>
+
+    <div class="letter-ending" id="verseEnding">
+      Simpan ini kapapun kamu mau sayangg.
+    </div>
+
+  </div>
+
+  <div class="reader-dots">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+</section>
+  
+ <!-- =========================================
+     JAR OF LITTLE THINGS
+========================================= -->
+<!-- =====================================
+     JAR OF LITTLE THINGS — NEW
+===================================== -->
+
+<section id="jarScreenNew" class="jar-screen-new">
+
+  <!-- BACK -->
+  <button id="jarBackNew" class="jar-back-new">
+    ←
+  </button>
+
+  <!-- HEADER -->
+  <div class="jar-header-new">
+
+    <div class="jar-decoration-new">
+      ♡ <span>✦</span> ♡
+    </div>
+
+    <h1>Jar of Little Things</h1>
+
+    <p>
+      Hal-hal kecil yang mungkin ingin<br>
+      kamu dengar hari ini ♡
+    </p>
+
+  </div>
+
+
+  <!-- JAR AREA -->
+  <div class="jar-area-new">
+
+    <div class="jar-glow-new"></div>
+
+    <div id="littleJarNew" class="little-jar-new">
+
+      <!-- LID -->
+      <div class="jar-lid-new">
+        <span></span>
+      </div>
+
+      <!-- BODY -->
+      <div class="jar-body-new">
+
+        <div class="jar-highlight-new"></div>
+
+        <!-- KERTAS DI DALAM -->
+        <div class="jar-paper-new paper-one">♡</div>
+        <div class="jar-paper-new paper-two">✦</div>
+        <div class="jar-paper-new paper-three">♡</div>
+        <div class="jar-paper-new paper-four">✧</div>
+
+        <!-- SURAT UTAMA -->
+        <button id="jarLetterNew" class="jar-letter-new">
+          <span>♡</span>
+          <small>untukmu</small>
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- STATUS -->
+  <div id="jarStatusNew" class="jar-status-new">
+    <span>✦</span>
+    Ketuk toplesnya 5 kali
+    <span>✦</span>
+  </div>
+
+  <div id="jarTapCountNew" class="jar-count-new">
+    0 / 5
+  </div>
+
+
+  <!-- MESSAGE OVERLAY -->
+  <div id="jarMessageBoxNew" class="jar-message-overlay-new">
+
+    <div class="jar-message-card-new">
+
+      <div class="message-sparkle-new">✦</div>
+
+      <div class="message-label-new">
+        SEBUAH PESAN KECIL
+      </div>
+
+      <div id="jarMessageTextNew" class="message-text-new">
+      </div>
+
+      <div class="message-heart-new">
+        ♡
+      </div>
+
+      <button id="messageCloseNew" class="message-close-new">
+        Tutup pesan
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+  
+<!-- =========================================
+     OUR SONG — MUSIC PAGE
+========================================= -->
+<!-- =========================================
+     OUR SONG
+======================================= -->
+
+<section id="ourSongPage">
+
+  <!-- BACK -->
+  <button
+    id="ourSongBack"
+    class="ourSongBack"
+    type="button"
+    aria-label="Kembali"
+  >
+    ←
+  </button>
+
+
+  <!-- HEADER -->
+  <div class="ourSongHeader">
+
+    <span class="ourSongEyebrow">
+      OUR LITTLE PLAYLIST
+    </span>
+
+    <h1>Our Song</h1>
+
+    <p>
+      Beberapa lagu yang kusiapkan
+      untukmu Lala♡
+    </p>
+
+  </div>
+
+
+  <!-- =====================================
+       FAVORITE SONGS
+  ====================================== -->
+
+  <div class="songGroup">
+
+    <div class="songGroupTitle">
+
+      <div class="songGroupIcon">
+        📀
+      </div>
+
+      <div>
+        <h2>Lagu Favorite Mu</h2>
+
+        <p>
+          Lagu yang kamu suka.
+        </p>
+      </div>
+
+    </div>
+
+
+    <!-- SONG 1 -->
+
+    <button
+      class="songItem"
+      type="button"
+
+      data-title="Akhirnya Ku Menemukanmu"
+      data-artist="Naff"
+
+      data-cover="https://res.cloudinary.com/ln78z8wz/image/upload/v1787983697/ab67616d0000b2739d16cb037e7c420c97292064.jpg"
+
+      data-audio="https://res.cloudinary.com/ln78z8wz/video/upload/v1787982151/Naff_-_Akhirnya_Ku_Menemukanmu_Lirik_Video.mp3"
+    >
+
+      <img
+        src="https://res.cloudinary.com/ln78z8wz/image/upload/v1787983697/ab67616d0000b2739d16cb037e7c420c97292064.jpg"
+        alt="Akhirnya Ku Menemukanmu"
+        loading="lazy"
+      >
+
+      <span class="songItemInfo">
+
+        <strong>
+          Akhirnya Ku Menemukanmu
+        </strong>
+
+        <small>
+          Naff
+        </small>
+
+      </span>
+
+      <span class="songPlay">
+        ▶
+      </span>
+
+    </button>
+
+
+    <!-- SONG 2 -->
+
+    <button
+      class="songItem"
+      type="button"
+
+      data-title="Wanitaku"
+      data-artist="NOAH"
+
+      data-cover="https://res.cloudinary.com/ln78z8wz/image/upload/v1787983697/ab67616d0000b273d6342c75204c065e554ede10.jpg"
+
+      data-audio="https://res.cloudinary.com/ln78z8wz/video/upload/v1787982150/NOAH_-_Wanitaku_Official_Audio.mp3"
+    >
+
+      <img
+        src="https://res.cloudinary.com/ln78z8wz/image/upload/v1787983697/ab67616d0000b273d6342c75204c065e554ede10.jpg"
+        alt="Wanitaku"
+        loading="lazy"
+      >
+
+      <span class="songItemInfo">
+
+        <strong>
+          Wanitaku
+        </strong>
+
+        <small>
+          NOAH
+        </small>
+
+      </span>
+
+      <span class="songPlay">
+        ▶
+      </span>
+
+    </button>
+
+
+    <!-- SONG 3 -->
+
+    <button
+      class="songItem"
+      type="button"
+
+      data-title="Cinta Luar Biasa"
+      data-artist="Andmesh"
+
+      data-cover="https://res.cloudinary.com/ln78z8wz/image/upload/v1787983697/Andmesh_-_Cinta_Luar_Biasa.png"
+
+      data-audio="https://res.cloudinary.com/ln78z8wz/video/upload/v1787982150/Andmesh_Kamaleng_-_Cinta_Luar_Biasa_lyrics.mp3"
+    >
+
+      <img
+        src="https://res.cloudinary.com/ln78z8wz/image/upload/v1787983697/Andmesh_-_Cinta_Luar_Biasa.png"
+        alt="Cinta Luar Biasa"
+        loading="lazy"
+      >
+
+      <span class="songItemInfo">
+
+        <strong>
+          Cinta Luar Biasa
+        </strong>
+
+        <small>
+          Andmesh
+        </small>
+
+      </span>
+
+      <span class="songPlay">
+        ▶
+      </span>
+
+    </button>
+
+  </div>
+
+
+  <!-- =====================================
+       SONGS THAT REMIND ME OF YOU
+  ====================================== -->
+
+  <div class="songGroup">
+
+    <div class="songGroupTitle">
+
+      <div class="songGroupIcon">
+        💽
+      </div>
+
+      <div>
+        <h2>
+          Lagu yang Mengingatkanku Kepadamu
+        </h2>
+
+        <p>
+          Lagu yang selalu membawa ingatan.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- SONG 4 -->
+
+    <button
+      class="songItem"
+      type="button"
+
+      data-title="Kau Lukiskan Aku"
+      data-artist="Dimas M"
+
+      data-cover="https://res.cloudinary.com/ln78z8wz/image/upload/v1787983695/images_1.jpg"
+
+      data-audio="https://res.cloudinary.com/ln78z8wz/video/upload/v1787982143/Dimas_M_-_kau_lukis_aku_Official_Audio_1.mp3"
+    >
+
+      <img
+        src="https://res.cloudinary.com/ln78z8wz/image/upload/v1787983695/images_1.jpg"
+        alt="Kau Lukiskan Aku"
+        loading="lazy"
+      >
+
+      <span class="songItemInfo">
+
+        <strong>
+          Kau Lukiskan Aku
+        </strong>
+
+        <small>
+          Dimas M
+        </small>
+
+      </span>
+
+      <span class="songPlay">
+        ▶
+      </span>
+
+    </button>
+
+
+    <!-- SONG 5 -->
+
+    <button
+      class="songItem"
+      type="button"
+
+      data-title="Kita Lewati Berdua"
+      data-artist="Overnight"
+
+      data-cover="https://res.cloudinary.com/ln78z8wz/image/upload/v1787983701/ab67616d0000b273d05559e98f982b79eb508dcc.jpg"
+
+      data-audio="https://res.cloudinary.com/ln78z8wz/video/upload/v1787982148/Overnight_-_Kita_Lewati_Berdua_Official_Audio.mp3"
+    >
+
+      <img
+        src="https://res.cloudinary.com/ln78z8wz/image/upload/v1787983701/ab67616d0000b273d05559e98f982b79eb508dcc.jpg"
+        alt="Kita Lewati Berdua"
+        loading="lazy"
+      >
+
+      <span class="songItemInfo">
+
+        <strong>
+          Kita Lewati Berdua
+        </strong>
+
+        <small>
+          Overnight
+        </small>
+
+      </span>
+
+      <span class="songPlay">
+        ▶
+      </span>
+
+    </button>
+
+
+    <!-- SONG 6 -->
+
+    <button
+      class="songItem"
+      type="button"
+
+      data-title="Resah"
+      data-artist="Payung Teduh"
+
+      data-cover="https://res.cloudinary.com/ln78z8wz/image/upload/v1787983696/ab67616d0000b2738ee03809d40edb632fadd3c0.jpg"
+
+      data-audio="https://res.cloudinary.com/ln78z8wz/video/upload/v1787982147/Resah.mp3"
+    >
+
+      <img
+        src="https://res.cloudinary.com/ln78z8wz/image/upload/v1787983696/ab67616d0000b2738ee03809d40edb632fadd3c0.jpg"
+        alt="Resah"
+        loading="lazy"
+      >
+
+      <span class="songItemInfo">
+
+        <strong>
+          Resah
+        </strong>
+
+        <small>
+          Payung Teduh
+        </small>
+
+      </span>
+
+      <span class="songPlay">
+        ▶
+      </span>
+
+    </button>
+    
+    <!-- SONG 7 -->
+
+    <button
+      class="songItem"
+      type="button"
+
+      data-title="Celengan Rindu"
+      data-artist="Fiersa Besari"
+
+      data-cover="https://res.cloudinary.com/ln78z8wz/image/upload/v1788450756/images_2.jpg"
+
+      data-audio="https://res.cloudinary.com/ln78z8wz/video/upload/v1788450789/Celengan_Rindu_-_Fiersa_Besari_Lirik_Lagu.mp3"
+    >
+
+      <img
+        src="https://res.cloudinary.com/ln78z8wz/image/upload/v1788450756/images_2.jpg"
+        alt="Celengan indu"
+        loading="lazy"
+      >
+
+      <span class="songItemInfo">
+
+        <strong>
+          Celengan Rindu
+        </strong>
+
+        <small>
+          Fiersa Basari
+        </small>
+
+      </span>
+
+      <span class="songPlay">
+        ▶
+      </span>
+
+    </button>
+    
+    <!-- SONG 8 -->
+
+    <button
+      class="songItem"
+      type="button"
+
+      data-title="Komang"
+      data-artist="Raim Laode"
+
+      data-cover="https://res.cloudinary.com/ln78z8wz/image/upload/v1788456985/26472133-6d1b-45df-b22f-9e680fb52191.png"
+
+      data-audio="https://res.cloudinary.com/ln78z8wz/video/upload/v1788451553/Komang_-_Raim_Laode_Lirik_Lagu.mp3"
+    >
+
+      <img
+        src="https://res.cloudinary.com/ln78z8wz/image/upload/v1788456985/26472133-6d1b-45df-b22f-9e680fb52191.png"
+        alt="Komang"
+        loading="lazy"
+      >
+
+      <span class="songItemInfo">
+
+        <strong>
+          Komang 
+        </strong>
+
+        <small>
+          Raim Laode
+        </small>
+
+      </span>
+
+      <span class="songPlay">
+        ▶
+      </span>
+
+    </button>
+    
+     <!-- SONG 8 -->
+
+    <button
+      class="songItem"
+      type="button"
+
+      data-title="Dunia Kita Nanti"
+      data-artist="Raim Laode"
+
+      data-cover="https://res.cloudinary.com/ln78z8wz/image/upload/v1788456983/ab67616d0000b273a9d1f9b5d3275b0625e13e79.jpg"
+
+      data-audio="https://res.cloudinary.com/ln78z8wz/video/upload/v1788457093/Dunia_Yang_Nanti_-_Raim_Laode___Lirik_Lagu.mp3"
+    >
+
+      <img
+        src="https://res.cloudinary.com/ln78z8wz/image/upload/v1788456983/ab67616d0000b273a9d1f9b5d3275b0625e13e79.jpg"
+        alt="Komang"
+        loading="lazy"
+      >
+
+      <span class="songItemInfo">
+
+        <strong>
+          Dunia Kita Nanti
+        </strong>
+
+        <small>
+          Raim Laode
+        </small>
+
+      </span>
+
+      <span class="songPlay">
+        ▶
+      </span>
+
+    </button>
+    
+    
+    
+ 
+  </div>
+
+
+  <!-- =====================================
+       PLAYER
+       NANTI DIISI OLEH JS
+  ====================================== -->
+
+  <div
+    id="ourSongPlayer"
+    class="ourSongPlayer"
+  ></div>
+
+</section>
+  
+   
+
+<!-- =========================
+     OUR LETTER
+========================= -->
+
+<section id="our-letter-page">
+
+  <!-- BACK -->
+  <button id="our-letter-back" class="letter-back">
+    <span>←</span>
+    
+  </button>
+
+
+  <!-- HEADER -->
+  <header class="letter-hero">
+
+    <div class="letter-hero-symbol">
+      ♥
+    </div>
+
+    <span class="letter-eyebrow">
+      A LITTLE COLLECTION
+    </span>
+
+    <h1>
+      Our Letter
+    </h1>
+
+    <p>
+      Kata-kata, kenangan, dan hal-hal kecil
+      yang aku pilih untuk disimpan di sini.
+    </p>
+
+    <div class="letter-hero-line">
+      <span>♥</span>
+    </div>
+
+  </header>
+
+
+  <!-- COLLECTION INFO -->
+  <div class="letter-collection">
+
+    <div class="collection-left">
+
+      <span class="collection-label">
+        OUR COLLECTION
+      </span>
+
+      <h2>
+        Empat Surat Cinta.
+      </h2>
+
+      <p>
+        Each letter keeps a different
+        part of our story.
+      </p>
+
+    </div>
+
+    <div class="collection-count">
+      <strong>04</strong>
+      <span>Surat</span>
+    </div>
+
+  </div>
+
+
+  <!-- LETTER LIST -->
+  <div class="letter-list">
+
+
+    <!-- LETTER A -->
+
+    <button
+      class="letter-card"
+      id="letter-card-a"
+    >
+
+      <div class="letter-number">
+        01
+      </div>
+
+      <div class="letter-envelope">
+
+        <div class="envelope-top">
+          💗
+        </div>
+
+      </div>
+
+      <div class="letter-card-content">
+
+        <span>
+          LETTER ONE
+        </span>
+
+        <h2>
+          Awal Aku Bertemu Denganmu
+        </h2>
+
+        <p>
+          Sebuah cerita yang dimulai
+          dari sesuatu yang sederhana.
+        </p>
+
+      </div>
+
+      <div class="letter-arrow">
+        →
+      </div>
+
+    </button>
+
+
+    <!-- LETTER B -->
+
+    <button
+      class="letter-card"
+      id="letter-card-b"
+    >
+
+      <div class="letter-number">
+        02
+      </div>
+
+      <div class="letter-envelope">
+
+        <div class="envelope-top">
+          🫂
+        </div>
+
+      </div>
+
+      <div class="letter-card-content">
+
+        <span>
+          LETTER TWO
+        </span>
+
+        <h2>
+          Luka dan Kasih Sayang
+        </h2>
+
+        <p>
+          Tentang hal-hal yang sudah
+          kita lewati bersama.
+        </p>
+
+      </div>
+
+      <div class="letter-arrow">
+        →
+      </div>
+
+    </button>
+
+
+    <!-- LETTER C -->
+
+    <button
+      class="letter-card"
+      id="letter-card-c"
+    >
+
+      <div class="letter-number">
+        03
+      </div>
+
+      <div class="letter-envelope">
+
+        <div class="envelope-top">
+          🧸
+        </div>
+
+      </div>
+
+      <div class="letter-card-content">
+
+        <span>
+          LETTER THREE
+        </span>
+
+        <h2>
+          Pengaruh Dirimu
+        </h2>
+
+        <p>
+          Beberapa momen kecil
+          yang layak untuk diingat.
+        </p>
+
+      </div>
+
+      <div class="letter-arrow">
+        →
+      </div>
+
+    </button>
+
+
+    <!-- LETTER D -->
+
+    <button
+      class="letter-card"
+      id="letter-card-d"
+    >
+
+      <div class="letter-number">
+        04
+      </div>
+
+      <div class="letter-envelope">
+
+        <div class="envelope-top">
+          📸
+        </div>
+
+      </div>
+
+      <div class="letter-card-content">
+
+        <span>
+          LETTER FOUR
+        </span>
+
+        <h2>
+          Harapan Untuk Masa depan.
+        </h2>
+
+        <p>
+          Sesuatu yang sengaja disimpan
+          di tempat kecil ini.
+        </p>
+
+      </div>
+
+      <div class="letter-arrow">
+        →
+      </div>
+
+    </button>
+
+
+  </div>
+
+
+  <!-- FOOTER -->
+
+  <div class="letter-footer">
+
+    <span class="footer-line"></span>
+
+    <p>
+      ditulis dengan sedikit rasa kasih ♥
+    </p>
+
+    <span class="footer-line"></span>
+
+  </div>
+
+</section>
+  
+  <!-- =================================
+     LETTER A — SEBUAH AWAL
+================================= -->
+
+<section id="letter-a-page" class="letter-reading-page">
+
+  <!-- BACK -->
+  <button id="LetterABack" class="reading-back">
+    ← 
+  </button>
+
+
+  <!-- TOP DECORATION -->
+  <div class="reading-top">
+
+    <span class="reading-mini">
+      LETTER 01 · AWAL AKU BERTEMU DENGANMU.
+    </span>
+
+    <div class="reading-envelope">
+      💗
+    </div>
+
+    <div class="reading-line">
+      <span>♡</span>
+    </div>
+
+  </div>
+
+
+  <!-- LETTER PAPER -->
+  <article class="reading-paper">
+
+    <div class="paper-corner">
+      ♡
+    </div>
+
+    <header class="paper-header">
+
+      <span class="paper-label">
+        A LITTLE NOTE
+      </span>
+
+      <h1>
+        AWAL AKU BEREMU DENGANMU
+      </h1>
+
+      <p class="paper-date">
+        Untuk bagian cerita yang pertama.
+      </p>
+
+    </header>
+
+
+    <div class="paper-divider">
+      <span></span>
+      ♡
+      <span></span>
+    </div>
+
+
+    <!-- LETTER CONTENT -->
+    <div class="paper-content">
+
+      <p>
+        Kalau kamu sampai membuka surat ini,
+        berarti kamu sedang membaca salah satu
+        bagian kecil dari cerita yang pernah kita awali,
+        Dan Awal dari semua cerita kita dimulai..
+      </p>
+
+      <p>
+        Sebuah cerita yang mungkin awalnya terlihat
+        sederhana, tapi perlahan menjadi sesuatu
+        yang begitu berarti. Dan Itu DimulaiDari
+        Ketika Aku Bertemu Denganmu Di sebuah aplikasi
+        Media sosial, yaitu Telegram.
+      </p>
+      
+      <p>
+        Waktu itu, ketika aku sedang menatap layar ponselku,
+        Aku mencoba sesuatu, yang membuatku penasarann
+        Yaitu, Telegram. Sebuah apikasi media sosial yang berbasis chat,
+        dengan banyak fitur bot di dalam nya. Dan Jelas saja
+        aku semakin penasaran dengan itu.
+      </p>
+      
+      <p>
+        Lalu pada saat itu, temanku Fajar, Ia menyarankanku untuk
+        Mencoba fitur Bot "Anonymous" agar aku bisa berbicara dengan
+        "Stranger", Atau Orang lain, Dan aku sangat menyukai konsep itu
+        Sehingga aku mencobanya ntuk pertama kalinya dalam hidupku,
+        Dan Jelas aku semakin tertarik sekaligus penasaran untuk mencoba
+      </p>
+      
+      <p>
+        Setelah aku mencobanya beberapa kali, dan benar saja aku bertemu
+        banyak orang yang berbicara denganku di fitur bot tersebut.
+        Sehingga gak jarang aku ingin mengenal seseorang yang aku temui
+        Didalam sebuah Bot itu, dan aku memainkannya hampir setiap hari,
+        Namun seringnya hanya seperti angin lewat.
+      </p>
+      
+      <p>
+        Banyak Orang yang aku lalui, banyk juga orang yang aku temui.
+        Namun diantara mereka tidak ada yang membuatku tertarik.
+        Akan tetapi, setelah aku mencari dan mencari seseorang yang 
+        menarik dimataku, dan yang cocok denganku.
+        aku bertemu dengan dirimu.
+      </p>
+      
+       <p>
+        Dari situ banyak percakapan lucu dan menarik saat kita bertemu
+        untuk pertama kalinya dalam sejarah hidupku.
+        Kamu begitu lucu, sehingga aku selalu memngingat seiap momen itu,
+        Momen dimana kita berkenlan menggunakan bahasa baku, dan mencoba 
+        membantu temanmu "Kay" untuk disadarkan agar ia tidak menjadi
+        sesuatu yang bukan kodratnya.
+      </p>
+
+      <p>
+        Aku masih suka berpikir tentang bagaimana
+        semuanya bisa dimulai. Dari percakapan kecil,
+        candaan yang mungkin awalnya tidak terlalu
+        berarti, sampai akhirnya ada seseorang yang
+        perlahan menjadi bagian dari hari-hariku.
+      </p>
+
+      <p>
+        Lucu juga kalau mengingatnya kembali.
+        Kita tidak pernah tahu bahwa hal-hal kecil
+        yang terjadi di awal ternyata bisa membawa
+        kita sejauh ini. Dan Tidak ada yang benar-benar
+        bisa memastikan bahwasannya,
+        bagaimana sebuah cerita akan berjalan ketika
+        pertama kali dimulai.
+      </p>
+
+      <p>
+        Tapi mungkin justru itu yang membuat sebuah
+        awal menjadi indah. Kita tidak perlu mengetahui
+        semuanya sejak awal.
+      </p>
+
+      <p>
+        Kadang kita hanya perlu menjalani satu hari,
+        kemudian satu hari berikutnya, sambil perlahan
+        mengenal satu sama lain.
+      </p>
+
+      <p>
+        Dari sana aku belajar bahwa sesuatu yang berarti
+        tidak selalu dimulai dengan hal yang besar.
+        Terkadang semuanya bermula dari hal sederhana
+        yang bahkan tidak kita sadari akan menjadi
+        sebuah kenangan.
+      </p>
+
+      <p>
+        Dan kalau suatu hari nanti kita melihat kembali
+        semua yang sudah terjadi, aku ingin kita bisa
+        tersenyum dan berkata,
+        <em>“ternyata semuanya memang dimulai dari sini.”</em>
+      </p>
+
+      <p>
+        Mungkin surat ini hanyalah beberapa paragraf
+        kecil di sebuah halaman sederhana. Tapi aku
+        ingin menyimpannya di sini, supaya bagian dari
+        cerita ini tidak hilang begitu saja.
+      </p>
+
+      <p>
+        Karena setiap cerita pasti punya awal.
+        Dan untuk cerita kita, aku akan selalu mengingat
+        awalnya sebagai salah satu bagian yang berharga.
+      </p>
+
+    </div>
+
+
+    <!-- SIGNATURE -->
+    <footer class="paper-footer">
+
+      <p>
+        — Dari seseorang yang masih ingin
+        menyimpan kenangan indah, Rael.
+      </p>
+
+      <div class="paper-heart">
+        ♡
+      </div>
+
+    </footer>
+
+  </article>
+
+
+  <!-- BOTTOM -->
+  <div class="reading-bottom">
+    <span></span>
+    <p>END OF LETTER 01</p>
+    <span></span>
+  </div>
+
+</section>
+  
+<!-- =================================
+     LETTER B — TENTANG PERJALANAN
+================================= -->
+
+<section id="letter-b-page" class="letter-reading-page">
+
+  <!-- BACK -->
+  <button id="LetterBBack" class="reading-back">
+    ← 
+  </button>
+
+  <!-- TOP DECORATION -->
+  <div class="reading-top">
+
+    <span class="reading-mini">
+      LETTER 02 · LUKA DAN KASIH SAYANG.
+    </span>
+
+    <div class="reading-envelope">
+      🫂
+    </div>
+
+    <div class="reading-line">
+      <span>♡</span>
+    </div>
+
+  </div>
+
+  <!-- LETTER PAPER -->
+  <article class="reading-paper">
+
+    <div class="paper-corner">
+      ♡
+    </div>
+
+    <header class="paper-header">
+
+      <span class="paper-label">
+        A LITTLE NOTE
+      </span>
+
+      <h1>
+        Tentang Perjalanan
+      </h1>
+
+      <p class="paper-date">
+        Untuk semua hal yang sudah kita lewati.
+      </p>
+
+    </header>
+
+    <div class="paper-divider">
+      <span></span>
+      ♡
+      <span></span>
+    </div>
+
+    <!-- LETTER CONTENT -->
+    <div class="paper-content">
+
+      <p>
+        Setiap perjalanan pasti punya cerita.
+        Ada hari-hari yang terasa mudah, ada juga
+        hari-hari yang mungkin tidak berjalan
+        seperti yang kita harapkan.
+      </p>
+      
+      <p>
+        Setelah aku melakukan confess kepadamu, banyak hal indah yang
+        terjadi pada saat itu, karena kita masih ada di fasel pengenalan
+        itu sangat lucu bagiku, karena pada saat itu kita sedang
+        berlomba lomba untuk menjadi seseorang yang baik.
+        Akan tetapi, waktu terus berjalan.
+        Ada hari-hari yang terasa mudah, Dan ada juga
+        hari-hari yang mungkin tidak berjalan
+        seperti apa yang kita harapkan.
+      </p>
+
+
+      <p>
+        Tapi kalau melihat ke belakang, ternyata kita sudah melewati 
+        banyak sekali hal kecil yang sudah kita alami
+        semasa Kita berhubungan.
+      </p>
+
+      <p>
+        Ada percakapan panjang, candaan sederhana, kesedihan, 
+        kesalahpahaman, rasa khawatir, rasa marah, rasa kecewa dan banyak
+        hal lain yang pada akhirnya kita melewati itu semua. Dan itu
+        adalah bentuk bagaimana cara hubungan kita berkembang untuk
+        saling melengkapi satu sama lain.
+      </p>
+
+      <p>
+        Oleh karena hal-hal kecil itu,
+        kita berdua perlahan belajar mengenal satu sama lain.
+        kita berduabelajar bahwasannya perjalanan tidak selalu
+        tentang hari-hari yang sempurna, akan tetapi ada hari yanh dimana
+        semuanya bukan keinginan kita.
+      </p>
+
+      <p>
+        Karena terkadang kita ada perbedaan pendapat.
+        Dan Ada waktu ketika semuanya terasa
+        sedikit lebih sulit dari biasanya.
+        Akan Tetapi setiap bagian dari perjalanan itu
+        tetap menjadi bagian dari cerita yang
+        tidak bisa begitu saja dihapus.
+      </p>
+
+      <p>
+        Karena mungkin yang membuat sebuah perjalanan
+        berarti bukan karena semuanya berjalan sempurna,
+        melainkan karena kita pernah melewati banyak
+        hal dan tetap mendapatkan sesuatu untuk dikenang.
+      </p>
+
+      <p>
+        Kalau suatu hari nanti kita mengingat kembali
+        semua perjalanan ini, adalah bentuk bagaimna
+        kita berkembang dan saling memperbaiki satu sama lain.
+        semoga yang paling kita ingat bukan hanya hal-hal sulitnya.
+        akan tetapi makna dan arti yang di dapat.
+      </p>
+
+      <p>
+        Dan Aku Harap semoga kita tidak lupa bagaimana kita tertawa,
+        percakapan penuh kasih,
+        perhatian kecil, dan semua momen sederhana
+        yang pernah membuat hari terasa lebih berarti.
+        Karena pada akhirnya, perjalanan adalah
+        kumpulan dari banyak langkah kecil.
+        Dan setiap langkah itu punya tempatnya sendiri
+        di dalam cerita.
+      </p>
+
+    </div>
+
+    <!-- SIGNATURE -->
+    <footer class="paper-footer">
+
+      <p>
+        — Untuk perjalanan yang masih punya
+        banyak halaman untuk ditulis.
+      </p>
+
+      <div class="paper-heart">
+        ♡
+      </div>
+
+    </footer>
+
+  </article>
+
+  <!-- BOTTOM -->
+  <div class="reading-bottom">
+    <span></span>
+    <p>END OF LETTER 02</p>
+    <span></span>
+  </div>
+
+</section>
+  
+<!-- =================================
+   LETTER C — MOMEN KITA
+================================= -->
+
+<section id="letter-c-page" class="letter-reading-page">
+
+  <!-- BACK -->
+  <button id="LetterCBack" class="reading-back">
+    ← 
+  </button>
+
+  <!-- TOP DECORATION -->
+  <div class="reading-top">
+
+    <span class="reading-mini">
+      LETTER 03 · PENGARUH DIRIMU
+    </span>
+
+    <div class="reading-envelope">
+      🧸
+    </div>
+
+    <div class="reading-line">
+      <span>♡</span>
+    </div>
+
+  </div>
+
+
+  <!-- LETTER PAPER -->
+  <article class="reading-paper">
+
+    <div class="paper-corner">
+      ♡
+    </div>
+
+
+    <!-- HEADER -->
+    <header class="paper-header">
+
+      <span class="paper-label">
+        A LITTLE NOTE
+      </span>
+
+      <h1>
+        Pengaruh Dirimu
+      </h1>
+
+      <p class="paper-date">
+        Untuk hal-hal kecil yang pantas diingat.
+      </p>
+
+    </header>
+
+
+    <!-- DIVIDER -->
+    <div class="paper-divider">
+      <span></span>
+      ♡
+      <span></span>
+    </div>
+
+
+    <!-- CONTENT -->
+    <div class="paper-content">
+
+      <p>
+        Ada banyak hal yang kita alami, terkadang sesuai harapan,
+        terkadang sealiknya, akan tetapi itu semua 
+        terjadi karena kita sering berkomunikasi sehingga
+        kita tidak lepas dri keterikatan.
+        Mungkin bukan selalu tentang hari yang besar
+        atau sesuatu yang luar biasa.
+        Terkadang justru momen kecil yang diam-diam
+        paling lama tinggal di ingatan.
+      </p>
+
+      <p>
+        Obrolan yang berlangsung secara intens,
+        candaan yang tiba-tiba muncul,
+        atau sekadar saling bercerita tentang
+        bagaimana hari kita berjalan.
+      </p>
+
+      <p>
+        itu semua tidak lepas dari bagaimana kita saling menjaga
+        interaksi, dan saling menjaga perasaan masing masing.
+        sehingga hal hal kecil itu berdampak penting bagi diri kita,
+        Oleh karena itu jika kamu menghilang dari hidupku,
+        maka itu akan sangat berpengaruh kepadaku.
+      </p>
+      
+      <p>
+        Jujur saja pengaruh dirimu didalam hidupku itu besar
+        Terkadang aku selalu mengaitkan suatu hal yang mustahil kepadamu
+        agar aku tetap terus maju, dan menjadikan dirimu sebagai 
+        motivasi juga semangatku, dalam melakukan hal-hal yang menurutku 
+        itu sulit.
+      </p>
+
+      <p>
+        Oleh karena itu setiap detik, menit, jam bersamamu itu
+        berarti buatku karena kamu adalah bahan bakarku.
+        Sehingga aku tdak mau kehilanganmu, karena hari hari
+        bersamamu itu tidak masuk ke dalam kalender, namun
+        selalu ku peringati sebagai hari yang istimewa.
+      </p>
+
+      <p>
+        Dari sanalah aku tumbuh, mengangkatkn kepalaku, berdiri tegak
+        serta tegas karena aku tau caranya menghargai seseorang,
+        yang menjadi fenomena sejarah istimewa demi perkembangan.
+      </p>
+
+      <p>
+        Dan aku suka membayangkan bahwasannya setiap momen
+        kecil yang pernah kita lewati itu seperti
+        halaman-halaman pendek dalam sebuah buku.
+      </p>
+
+      <p>
+        Tidak semuanya panjang.
+        Tidak semuanya sempurna.
+        Tapi semuanya punya tempatnya sendiri.
+      </p>
+
+      <p>
+        Dan mungkin suatu hari nanti, ketika waktu
+        sudah berjalan jauh, kita akan melihat kembali
+        halaman-halaman itu dan menyadari betapa
+        banyaknya hal kecil yang ternyata pernah berarti.
+      </p>
+
+      <p>
+        Jadi kalau ada satu hal yang ingin kusimpan
+        dari semua ini, mungkin bukan hanya tentang
+        apa yang terjadi.
+      </p>
+
+      <p>
+        Tapi tentang bagaimana momen-momen kecil itu sangat berpengaruh
+        dan pernah membuat sebuah bagian dari perjalanan yang,
+        terasa lebih bermakna dan berharga.
+      </p>
+
+    </div>
+
+
+    <!-- SIGNATURE -->
+    <footer class="paper-footer">
+
+      <p>
+        — Untuk semua momen kecil yang
+        pernah menjadi bagian dari cerita.
+      </p>
+
+      <div class="paper-heart">
+        ♡
+      </div>
+
+    </footer>
+
+  </article>
+
+
+  <!-- BOTTOM -->
+  <div class="reading-bottom">
+
+    <span></span>
+
+    <p>
+      END OF LETTER 03
+    </p>
+
+    <span></span>
+
+  </div>
+
+</section>
+  
+<!-- =================================
+     LETTER D — YANG AKU SIMPAN
+================================= -->
+
+<section id="letter-d-page" class="letter-reading-page">
+
+  <!-- BACK -->
+  <button id="LetterDBack" class="reading-back">
+    ← 
+  </button>
+
+  <!-- TOP DECORATION -->
+  <div class="reading-top">
+
+    <span class="reading-mini">
+      LETTER 04 · HARAPANKU UNTUK MASA DEPAN
+    </span>
+
+    <div class="reading-envelope">
+      📸
+    </div>
+
+    <div class="reading-line">
+      <span>♡</span>
+    </div>
+
+  </div>
+
+
+  <!-- LETTER PAPER -->
+  <article class="reading-paper">
+
+    <div class="paper-corner">
+      ♡
+    </div>
+
+
+    <!-- HEADER -->
+    <header class="paper-header">
+
+      <span class="paper-label">
+        A LITTLE NOTE
+      </span>
+
+      <h1>
+        Harapanku untuk masa depan.
+      </h1>
+
+      <p class="paper-date">
+        Untuk sesuatu yang sengaja kusimpan di sini.
+      </p>
+
+    </header>
+
+
+    <!-- DIVIDER -->
+    <div class="paper-divider">
+      <span></span>
+      ♡
+      <span></span>
+    </div>
+
+
+    <!-- CONTENT -->
+    <div class="paper-content">
+
+      <p>
+        Clara, Aku gatau harus bagaimana mengungkapkannya,
+        Yang cuma aku mau bilang, Apabila waktu terus 
+        berjalan. Dan hari demi hari kit lewati.
+        Aku harap kamu tetap berada di sampingku, sambil melewati
+        berbagai rintagan di waktu yang akan datang.
+      </p>
+
+      <p>
+        Oleh karena itu, aku memohon kepadamu agar terus,
+        bersama denganku, menemukan pengalaman yang berarti 
+        dan meniggalkan cerita yang menjadi kenangan.
+        sehingga percakapan-percakapan kecil,
+        perhatian sederhana, dan momen momen lucu yang kita bangun
+        tidak menghilang begitu saja.
+      </p>
+
+      <p>
+        Aku berharap kamu akan tetap memilih dirimu pada akhirnya
+        karena sejatinya aku memang benar-benar mencintaimu
+        dari lubuk hati yang paling dalam. Mungkin orang lain
+        Meremehkan kita karena kita hanyalah seorang remaja dan 
+        tidak memiliki tujuan karena kita berbeda pandangan.
+      </p>
+
+      <p>
+        Namun itu semua masih bisa kita buktikan kepada mereka
+        bahwasannya orang yang tekad serta tulus, akan selalu
+        diberikan jalan bagi orang yang berusaha.
+      </p>
+
+      <p>
+        Maka, ayok buktikan bersama bahwasannya kita memiliki tujuan,
+        kita mempunyai kemampuan, dan kita ada rencana untuk masa depan.
+        kelak mereka akan tahu, bagaimana kekuatan cinta bisa 
+        menghasilkan tujuan pada titik buta.
+      </p>
+
+      <p>
+        Oleh karena itu, aku mohon kepada dirimu Lala. Tetap memilihku
+        pada akhirnya, dan jadikan aku sebagai tempat bagaimana dirimu
+        lelah dan sepi
+      </p>
+
+      <p>
+        dan semoga aku bisa menjadi pria yang kamu inginkan,
+        serta tuntun aku jadi apa yang kamu mau.
+        mari kita berdua melawan dunia.
+      </p>
+
+    </div>
+
+
+    <!-- SIGNATURE -->
+    <footer class="paper-footer">
+
+      <p>
+        — Untuk hal-hal kecil yang mungkin sederhana,
+        tapi tetap ingin disimpan dengan baik.
+      </p>
+
+      <div class="paper-heart">
+        ♡
+      </div>
+
+    </footer>
+
+  </article>
+
+
+  <!-- BOTTOM -->
+  <div class="reading-bottom">
+
+    <span></span>
+
+    <p>
+      END OF LETTER 04
+    </p>
+
+    <span></span>
+
+  </div>
+
+</section>
+  
+<!-- GLOBAL TAP SOUND -->
+
+<audio
+  id="tapSound"
+  src="https://res.cloudinary.com/ln78z8wz/video/upload/v1788260281/Minecraft_pop.mp3"
+  preload="auto">
+</audio>
+  
+  <!-- =================================
+     OUR TIMELINE
+================================= -->
+
+<section id="our-timeline-page">
+
+  <!-- BACK -->
+  <button id="our-timeline-back" class="timeline-back">
+    <span>←</span>
+    
+  </button>
+
+
+  <!-- HEADER -->
+  <header class="timeline-hero">
+
+    <div class="timeline-hero-symbol">
+      ♡
+    </div>
+
+    <span class="timeline-eyebrow">
+      OUR LITTLE STORY
+    </span>
+
+    <h1>
+      Our Timeline
+    </h1>
+
+    <p>
+      Setiap momen kecil Aku dan Kamu 
+      dalam satiap kisah kita.
+    </p>
+
+    <div class="timeline-hero-line">
+      <span>♡</span>
+    </div>
+
+  </header>
+
+
+  <!-- TIMELINE -->
+  <div class="timeline-wrapper">
+
+
+    <!-- =========================
+         01 — THE BEGINNING
+    ========================== -->
+
+    <article class="timeline-item timeline-left">
+
+      <div class="timeline-dot">
+        01
+      </div>
+
+      <div class="timeline-card">
+
+        <div class="timeline-photo">
+          <img
+            src="https://res.cloudinary.com/ln78z8wz/image/upload/v1788446624/IMG_20260903_213141.jpg"
+            alt="The Beginning">
+        </div>
+
+        <div class="timeline-content">
+
+          <span class="timeline-number">
+            MEMORY 01
+          </span>
+
+          <h2>
+            The Beginning
+          </h2>
+
+          <span class="timeline-date">
+            OUR FIRST MEETING · TELEGRAM
+          </span>
+
+          <p>
+            Aku masih ga nyangak ketika aku lagi
+            main bot anonymous, aku dipertemukan
+            dengan dirimu, aku ingat waktu itu aku
+            menggunakan bahasa baku ku untuk
+            berbicara denganmu seperti
+            "Halo Nona, Jika Nona Berkenan
+            memberikan saya kesempatan untuk
+            bertanya, Maka Nona Sedang melakukan
+            aktivitas Apa?" HAHAHA lucu banget
+            dipikir pikir.
+          </p>
+
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- =========================
+         02 — FIRST PAP
+    ========================== -->
+
+    <article class="timeline-item timeline-right">
+
+      <div class="timeline-dot">
+        02
+      </div>
+
+      <div class="timeline-card">
+
+        <div class="timeline-photo">
+          <img
+            src="https://res.cloudinary.com/ln78z8wz/image/upload/v1788446628/IMG_20260903_213025.jpg"
+            alt="First Pap">
+        </div>
+
+        <div class="timeline-content">
+
+          <span class="timeline-number">
+            MEMORY 02
+          </span>
+
+          <h2>
+            First Pap
+          </h2>
+
+          <span class="timeline-date">
+            THE FIRST PHOTO
+          </span>
+
+          <p>
+            Ini first pap yang aku punya ketika kamu
+            mengirim wajahmu kepadaku untuk pertama
+            kalinya. Aku kagum karena kamu begitu
+            sangat lugu dan lucu, meskipun posisi kita
+            masih dalam keadaan hanya teman bukan?.
+            hihihihi
+          </p>
+
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- =========================
+         03 — FIRST LOVE CONFESSION
+    ========================== -->
+
+    <article class="timeline-item timeline-left">
+
+      <div class="timeline-dot">
+        03
+      </div>
+
+      <div class="timeline-card">
+
+        <div class="timeline-photo">
+          <img
+            src="https://res.cloudinary.com/ln78z8wz/image/upload/v1788446629/IMG_20260903_213340.jpg"
+            alt="First Love Confession">
+        </div>
+
+        <div class="timeline-content">
+
+          <span class="timeline-number">
+            MEMORY 03
+          </span>
+
+          <h2>
+            First Love Confession
+          </h2>
+
+          <span class="timeline-date">
+            THE FIRST CONFESSION
+          </span>
+
+          <p>
+            Sebenernya agak konyol caraku nembak
+            ke kamu, tapi jujur aku akui, aku bener
+            bener grogi malu dan sebagainya,
+            meskipun tidak sesuai kesepakatan yang
+            sebenarnya, tapi aku senang udah bisa
+            mengungkapkan perasaanku kepadamu hehe.
+          </p>
+
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- =========================
+         04 — ADMIRING YOU
+    ========================== -->
+
+    <article class="timeline-item timeline-right">
+
+      <div class="timeline-dot">
+        04
+      </div>
+
+      <div class="timeline-card">
+
+        <div class="timeline-photo">
+          <img
+            src="https://res.cloudinary.com/ln78z8wz/image/upload/v1788446628/IMG_20260903_213226.jpg"
+            alt="Admiring You">
+        </div>
+
+        <div class="timeline-content">
+
+          <span class="timeline-number">
+            MEMORY 04
+          </span>
+
+          <h2>
+            Admiring You
+          </h2>
+
+          <span class="timeline-date">
+            FEBRUARY · A LITTLE ADMIRATION
+          </span>
+
+          <p>
+            Aku ingat waktu aku mengambil screenshot
+            ini, ini terjadi pas bulan febuari, ketika
+            aku lagi asik asiknya nge stalking kamu
+            hihihi, jujur disini kamu cantik banget,
+            aku ngerasa kayak beruntung bisa memiliki
+            kamu di hidupku, sejatinya aku gak mau
+            kehilanganmu dengan hanya melihat foto
+            ini hihihi, aku kagum beb.. aku kagum.
+          </p>
+
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- =========================
+         05 — FIRST GIFT
+    ========================== -->
+
+    <article class="timeline-item timeline-left">
+
+      <div class="timeline-dot">
+        05
+      </div>
+
+      <div class="timeline-card">
+
+        <div class="timeline-photo">
+          <img
+            src="https://res.cloudinary.com/ln78z8wz/image/upload/v1788446628/IMG_20260903_213600.jpg"
+            alt="First Gift From You">
+        </div>
+
+        <div class="timeline-content">
+
+          <span class="timeline-number">
+            MEMORY 05
+          </span>
+
+          <h2>
+            First Gift From You
+          </h2>
+
+          <span class="timeline-date">
+            A GIFT TO REMEMBER
+          </span>
+
+          <p>
+            Jujur ini hadiah yang benar benar berbeda
+            dari yang lain, aku ingat ketika kamu
+            bener bener tidak mau kehilanganku
+            sehingga kamu rela mencukur rambutmu
+            jadi pendek demi aku, dan sampe sekarang
+            aku masih menghargai dedikasi mu itu,
+            aku sangat suka rambut mu.. karena ada
+            hubungannya denganku, dan itu yang
+            ngebuat hal ini tuh sangat berarti besar
+            bagiku.
+          </p>
+
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- =========================
+         06 — FIRST CALL
+    ========================== -->
+
+    <article class="timeline-item timeline-right">
+
+      <div class="timeline-dot">
+        06
+      </div>
+
+      <div class="timeline-card">
+
+        <div class="timeline-photo">
+          <img
+            src="https://res.cloudinary.com/ln78z8wz/image/upload/v1788446634/IMG_20260903_213459.jpg"
+            alt="First Call">
+        </div>
+
+        <div class="timeline-content">
+
+          <span class="timeline-number">
+            MEMORY 06
+          </span>
+
+          <h2>
+            First Call
+          </h2>
+
+          <span class="timeline-date">
+            THE FIRST CALL
+          </span>
+
+          <p>
+            Hihihi lucu ajaa waktu dulu kamu bilang
+            ga suka vc/call, tapi ketika kamu
+            berhubung dengan ku, kamu sangat amat
+            menyukai media komunikasi itu.. yaa sama
+            aja sih, aku jadinya merasa dekat banget
+            sama kamu hehe, dan itu semua dimulai
+            dari sini, momen yang begitu bersejarah
+            bagi kita berdua.
+          </p>
+
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- =========================
+         07 — LITTLE SILLY MOMENTS
+    ========================== -->
+
+    <article class="timeline-item timeline-left">
+
+      <div class="timeline-dot">
+        07
+      </div>
+
+      <div class="timeline-card">
+
+        <div class="timeline-photo">
+          <img
+            src="https://res.cloudinary.com/ln78z8wz/image/upload/v1788446631/IMG_20260903_213704.jpg"
+            alt="Little Silly Moments">
+        </div>
+
+        <div class="timeline-content">
+
+          <span class="timeline-number">
+            MEMORY 07
+          </span>
+
+          <h2>
+            Little Silly Moments
+          </h2>
+
+          <span class="timeline-date">
+            OUR FUNNY MOMENTS
+          </span>
+
+          <p>
+            HAHAHAHA, Aku gatau rasanya ketika
+            melihat ini, aku jadi sangat amat mencintai
+            mu, karena momen momen konyol seperti
+            inilah, yang ngebuat hubungan kita hidup,
+            dan terus komunikatif. aku kangen
+            interaksi seperti ini lagi hehe mwah.
+            aku serius sama kamu.
+          </p>
+
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- =========================
+         08 — FIRST VIDEO CALL
+    ========================== -->
+
+    <article class="timeline-item timeline-right">
+
+      <div class="timeline-dot">
+        08
+      </div>
+
+      <div class="timeline-card">
+
+        <div class="timeline-photo">
+          <img
+            src="https://res.cloudinary.com/ln78z8wz/image/upload/v1788446696/IMG_20260903_213520.jpg"
+            alt="First Video Call">
+        </div>
+
+        <div class="timeline-content">
+
+          <span class="timeline-number">
+            MEMORY 08
+          </span>
+
+          <h2>
+            First Video Call
+          </h2>
+
+          <span class="timeline-date">
+            REALTIME FOR THE FIRST TIME
+          </span>
+
+          <p>
+            Jujur aku beneran excited banget ketika
+            ini terjadi, karena aku benar benar bisa
+            melihat wajahmu secara realtime, dan emang
+            jadi merasa interaktif. Aku jadi lebih dekat
+            denganmu dan, makin sayang sama kamu.
+            Kamu ituuu cantik.
+          </p>
+
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- =========================
+         09 — LOVE WALLPAPER
+    ========================== -->
+
+    <article class="timeline-item timeline-left">
+
+      <div class="timeline-dot">
+        09
+      </div>
+
+      <div class="timeline-card">
+
+        <div class="timeline-photo">
+          <img
+            src="https://res.cloudinary.com/ln78z8wz/image/upload/v1788446635/IMG_20260903_213546.jpg"
+            alt="Love Wallpaper">
+        </div>
+
+        <div class="timeline-content">
+
+          <span class="timeline-number">
+            MEMORY 09
+          </span>
+
+          <h2>
+            Love Wallpaper
+          </h2>
+
+          <span class="timeline-date">
+            A LITTLE SIGN OF LOVE
+          </span>
+
+          <p>
+            Jujur aku sangat suka ketika kamu serba
+            masangin wajahku di hape mu hehe,
+            Ku jadi merasa sangat amat dicintai, dan
+            oleh karena itu aku beneran bangga sekaligus
+            bahagia ketika kamu mengenakan foto ku
+            untuk dijadikan walpaper, ini berarti banyak
+            bagiku.
+          </p>
+
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- =========================
+         10 — SLEEPY MOMENT
+    ========================== -->
+
+    <article class="timeline-item timeline-right">
+
+      <div class="timeline-dot">
+        10
+      </div>
+
+      <div class="timeline-card">
+
+        <div class="timeline-photo">
+          <img
+            src="https://res.cloudinary.com/ln78z8wz/image/upload/v1788446636/IMG_20260903_213621.jpg"
+            alt="Sleepy Moment">
+        </div>
+
+        <div class="timeline-content">
+
+          <span class="timeline-number">
+            MEMORY 10
+          </span>
+
+          <h2>
+            Sleepy Moment
+          </h2>
+
+          <span class="timeline-date">
+            A QUIET LITTLE MOMENT
+          </span>
+
+          <p>
+            HAHAHAHA LUCUU BANGETTT SAYANGG,
+            disinii aku baruuu pertama kaliii liatt
+            kamuu tidurr, dan ternyataa emng kamu
+            tuh pabrik gula, manis semua hehe.
+            aku cinta banget sama si imutku yang
+            satu ini.
+          </p>
+
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- =========================
+         11 — THROUGH THE CONFLICTS
+    ========================== -->
+
+    <article class="timeline-item timeline-left">
+
+      <div class="timeline-dot">
+        11
+      </div>
+
+      <div class="timeline-card">
+
+        <div class="timeline-photo">
+          <img
+            src="https://res.cloudinary.com/ln78z8wz/image/upload/v1788446638/IMG_20260903_213855.jpg"
+            alt="Through the Conflicts">
+        </div>
+
+        <div class="timeline-content">
+
+          <span class="timeline-number">
+            MEMORY 11
+          </span>
+
+          <h2>
+            Through the Conflicts
+          </h2>
+
+          <span class="timeline-date">
+            THE HARDER DAYS
+          </span>
+
+          <p>
+            Kadang kita harus berhati hati lagi dalam
+            bertindak, dan emang di dalam hubungan
+            itu ga jauh dari sesuatu seperti
+            mengganggu, dll.
+          </p>
+
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- =========================
+         12 — YOU'RE SO CUTE
+    ========================== -->
+
+    <article class="timeline-item timeline-right">
+
+      <div class="timeline-dot">
+        12
+      </div>
+
+      <div class="timeline-card">
+
+        <div class="timeline-photo">
+          <img
+            src="https://res.cloudinary.com/ln78z8wz/image/upload/v1788446636/IMG_20260903_213642.jpg"
+            alt="You're So Cute">
+        </div>
+
+        <div class="timeline-content">
+
+          <span class="timeline-number">
+            MEMORY 12
+          </span>
+
+          <h2>
+            You're So Cute
+          </h2>
+
+          <span class="timeline-date">
+            A LITTLE EFFORT
+          </span>
+
+          <p>
+            Disini kamuu bikinin aku love dari
+            rambutmu hehe, BAGUS BANGET HASILNYA
+            AKU SUKA, kamu tuh cewek yang emang
+            effort bangettt, aku bangga punya dirimu.
+          </p>
+
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- =========================
+         13 — SLEEP CALL
+    ========================== -->
+
+    <article class="timeline-item timeline-left">
+
+      <div class="timeline-dot">
+        13
+      </div>
+
+      <div class="timeline-card">
+
+        <div class="timeline-photo">
+          <img
+            src="https://res.cloudinary.com/ln78z8wz/image/upload/v1788446638/IMG_20260903_213746.jpg"
+            alt="Sleep Call">
+        </div>
+
+        <div class="timeline-content">
+
+          <span class="timeline-number">
+            MEMORY 13
+          </span>
+
+          <h2>
+            Sleep Call
+          </h2>
+
+          <span class="timeline-date">
+            A NEW LITTLE ROUTINE
+          </span>
+
+          <p>
+            Hihihi kamu tuh emang perhatiannn
+            orangnya, dan ini jujur jadi salahh
+            satuu pengalaman kamu sih bisa sejauh
+            ini. kamu udah mulai berani memulai
+            sesuatu dari pada sebelumnya.
+          </p>
+
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- =========================
+         14 — YOUR BIRTHDAY
+    ========================== -->
+
+    <article class="timeline-item timeline-right">
+
+      <div class="timeline-dot">
+        14
+      </div>
+
+      <div class="timeline-card">
+
+        <div class="timeline-photo">
+          <img
+            src="https://res.cloudinary.com/ln78z8wz/image/upload/v1788446731/Retro_Happy_Birthday_Photo_Collage_Instagram_Post_20260903_211731_0000.png"
+            alt="Your Birthday">
+        </div>
+
+        <div class="timeline-content">
+
+          <span class="timeline-number">
+            MEMORY 14
+          </span>
+
+          <h2>
+            And Now It's Your Birthday!
+          </h2>
+
+          <span class="timeline-date">
+            A DAY TO REMEMBER
+          </span>
+
+          <p>
+            Dan sampailah ke sini, jujur aku masih
+            ga ekspek waktu bisa secepat itu, dan
+            dari banyaknya semua cowok, ntah kenapa
+            dia tetap memilihku, aku sangat
+            mencintaimu. semoga kamu tetap di
+            berikan ketabahan, kesehatan dan kekuatan 
+            dalam menangani masalah kedepannya, aku selau
+            Berdoa kepada tuhan, Agar kamu tetap terus 
+            bersamaku.
+          </p>
+
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- =========================
+         15 — TO BE CONTINUED
+    ========================== -->
+
+    <article class="timeline-item timeline-finale">
+
+      <div class="timeline-dot timeline-final-dot">
+        ♡
+      </div>
+
+      <div class="timeline-card timeline-final-card">
+
+        <div class="timeline-final-symbol">
+          ♡
+        </div>
+
+        <div class="timeline-content">
+
+          <span class="timeline-number">
+            THE NEXT CHAPTER
+          </span>
+
+          <h2>
+            Our Story Continues
+          </h2>
+
+          <p>
+            Empat belas momen sudah tersimpan
+            di sini. Tapi cerita ini belum selesai.
+          </p>
+
+          <span class="timeline-continue">
+            more memories to come...
+          </span>
+
+        </div>
+
+      </div>
+
+    </article>
+
+
+  </div>
+
+
+  <!-- FOOTER -->
+
+  <div class="timeline-footer">
+
+    <span></span>
+
+    <p>
+      every moment has a place ♡
+    </p>
+
+    <span></span>
+
+  </div>
+
+</section>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
