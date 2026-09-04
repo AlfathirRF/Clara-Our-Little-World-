@@ -9348,3 +9348,19 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* =========================
+   REMOVE MOBILE TAP BLUE
+   ========================= */
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+a,
+input,
+textarea,
+select {
+  outline: none;
+}
